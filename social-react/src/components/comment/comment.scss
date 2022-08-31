@@ -1,0 +1,227 @@
+@import "../../constants";
+
+.modal {
+  @include flexwithcenter(row, center) {
+    align-items: center;
+  }
+
+  position: fixed;
+}
+
+.modalHorizontalBox {
+  padding: 16px 16px 14px;
+  box-shadow: $boxshadow3;
+  background-color: $white;
+  display: flex;
+  border: 1px solid $white !important;
+  max-width: 900px;
+  height: 410px;
+  width: 100%;
+  position: relative;
+  margin: 0px 10px;
+
+  @media screen and (max-width: 500px) {
+    padding: 0px 13px 13px 13px;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 500px;
+  }
+
+  @media screen and (max-width: 340px) {
+    height: 700px;
+  }
+}
+
+%flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.modalLeft {
+  flex: 1;
+  overflow-y: scroll;
+  padding-right: 15px;
+  @extend %flex;
+
+  @media screen and (max-width: 500px) {
+    overflow: unset;
+    flex: none;
+    padding:0px 15px;
+  }
+}
+
+.modalRight {
+  padding-left: 5px;
+  flex: 1;
+  @extend %flex;
+  position: relative;
+
+  @media screen and (max-width: 500px) {
+    flex: none;
+    height: 100%;
+  }
+}
+
+.modalRightTopUsername {
+  position: sticky;
+  @include setspace(0 10px, 6px 0, 16px, 600);
+  top: 0px;
+  z-index: 5;
+  background-color: $white;
+}
+
+.modalLeftBottom {
+  display: flex;
+  align-items: center;
+}
+
+.cancelImg {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+  opacity: 0.7;
+  color: desaturate($color: $lightgray, $amount: 50);
+}
+
+.commentSection {
+  @extend %flex;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+}
+
+.comment {
+  @extend .modalLeftBottom;
+  padding: 2px 10px;
+}
+
+.commentLeft {
+  margin-right: 10px;
+}
+
+.commentCenter {
+  padding: 0px 5px;
+  flex-grow: 1;
+
+}
+
+.commentTextTitle {
+  word-break: break-all;
+  font-size: 14px;
+}
+
+.commentText {
+  font-weight: 400;
+}
+
+.commentUsername {
+  font-weight: 600;
+  color: $dark;
+}
+
+.commenttCenter {
+  @extend %flex;
+  align-items: flex-start;
+}
+
+.commentDate {
+  @include setspace(3px 0px, 0, 10px, 500);
+  color: $grey;
+}
+
+.commentBottom {
+  @include flexwithcenter(row, space-between) {
+    align-items: center;
+  }
+
+  padding: 5px;
+
+  @media screen and (max-width: 500px) {
+    position: sticky;
+    bottom: 0px;
+    padding: 12px 0px;
+    background-color: $white;
+  }
+}
+
+.commentSubmit {
+  width: 70px;
+  height: 40px;
+  color: $white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: $teal;
+  margin: 3px 0px;
+}
+
+.deleteIcon {
+  opacity: 0.7;
+  cursor: pointer;
+  color: desaturate($color: $lightgray, $amount: 30);
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.commentSectionInner {
+  height: 325px;
+  overflow-y: scroll;
+  background-color: $white;
+   padding:2px 0px;
+  @media screen and (max-width: 500px) {
+    height: fit-content;
+  }
+}
+
+.cancelBox {
+  top: 0px;
+  right: 0px;
+  z-index: 3;
+  position: absolute;
+
+  @media screen and (max-width: 500px) {
+    padding-bottom: 5px;
+    background-color: $white;
+    position: fixed;
+    top: auto;
+    text-align: end;
+    left: 12px;
+    right: 12px;
+  }
+}
+
+.cancelIcon {
+  font-size: 29px !important;
+  cursor: pointer;
+}
+.commentRight {
+  @include flexwithcenter(row, center) {
+    align-items: center;
+  }
+
+}
+.hr {
+  display: none;
+
+  @media only screen and (max-width: 500px) {
+    display: block;
+    opacity: 0.8;
+    margin: 9px 2px;
+  }
+}
+
+.modalLeftTop {
+  @media screen and (max-width: 500px) {
+    padding: 10px 0px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .modalHorizontalBox {
+    height: 700px;
+  }
+}

@@ -1,0 +1,74 @@
+@import "../../constants";
+
+.sidebar {
+    flex: 3;
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    position: sticky;
+    top: 50px;
+
+
+    @media only screen and (max-width:1122px) {
+        display: none;
+    }
+}
+.sidebarTitle{
+    margin: 0px 10px 15px 10px;
+    font-weight: 600;
+    font-size: 19px;
+}
+.sidebarWrapper {
+
+    padding: 20px;
+}
+
+.sidebarList{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebarListItem {
+    display: flex;
+    width: 250px;
+    cursor: pointer;
+    padding: 10px;
+
+    align-items: center;
+
+    &:hover{
+
+        background-color: $lightgray;    }
+}
+
+
+.sidebarIcon {
+    margin-right: 10px;
+}
+
+.sidebarButton {
+    font-size: 15px;
+    border-radius: 5px;
+    width: 150px;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.sidebarHr {
+    margin: 20px 0px;
+
+}
+
+.sidebarFriend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sidebarFriendImg {
+    @include img(36px, 36px) {
+        margin-right: 30px;
+    }
+}

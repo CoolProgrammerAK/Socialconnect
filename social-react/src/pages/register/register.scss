@@ -1,0 +1,145 @@
+@import "../../constants";
+@import "../login/login";
+
+.login {
+    @include flexwithcenter(row, center) {
+        align-items: center
+    }
+
+    ;
+    width: 100vw;
+    height: 100vh;
+    background-color: $message;
+    min-width: fit-content;
+    overflow: scroll;
+
+    @media screen and (max-width:600px) {
+        padding-bottom: 25px;
+
+
+    }
+
+}
+
+
+
+.loginWrapper {
+    width: 1000px;
+    height: 90%;
+    padding: 15px;
+    display: flex;
+
+    @media screen and (max-width:600px) {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (min-width:600px) and (max-width:1080px) {
+
+        max-width: 450px;
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.loginLeft,
+.loginRight {
+    flex: 1;
+    @include flexwithcenter(column, center);
+
+    @media screen and (max-width:600px) {
+        text-align: center;
+    }
+}
+
+@include linkcolor($white);
+
+.loginLogo {
+    font-size: 40px;
+    font-weight: 800;
+    color: $navbar;
+}
+
+.loginDesc {
+    padding: 5px;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.loginButton {
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: $navbar;
+    color: $white;
+    @include flexwithcenter(column, center){
+        align-items: center
+    };
+    @include setspace(8px 0px, 0, 20px, 500) {
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:disabled {
+            cursor: not-allowed;
+        }
+    }
+
+}
+
+.loginRegisterButton {
+    width: 100%;
+    align-self: center;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: $lightgreen;
+    color: $white;
+
+    @include setspace(0px, 0px, 20px, 500) {
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+
+    }
+}
+
+@include cursor(".loginIcon");
+
+.loginBox {
+    // height: 400px;
+    padding: 20px;
+    background-color: $white;
+    border-radius: 10px;
+    @include flexwithcenter(column, space-between);
+}
+
+.loginInput {
+    border-radius: 10px;
+    border: 1px solid $grey;
+
+    @include flexwithcenter(row, space-between) {
+        align-items: center
+    }
+
+    ;
+    @include setspace(8px 0px, 10px 20px, 17px, 500);
+
+}
+
+
+.loginInputField {
+
+    font-size: 17px;
+    width: 100%;
+    @include outlineborder();
+}

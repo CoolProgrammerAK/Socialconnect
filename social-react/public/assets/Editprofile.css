@@ -1,0 +1,203 @@
+.loadingSpinner, .editProfileSectionInner, .editProfileSectionImg, .editProfileImgButtons, .editProfileSectionButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.editProfileSectionWrapper {
+  max-width: 700px;
+  margin: auto;
+}
+
+.editProfileSectionInner {
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 20px;
+  margin: 20px;
+}
+
+.editProfilePicture {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.68);
+          box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.68);
+}
+
+.editProfileSectionImg {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.editProfileImgButtons {
+  margin: 20px 0px;
+}
+
+.editImgButton, .deleteImgButton {
+  margin: 0px 16px 0px 0px !important;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.editProfileSectionContainer {
+  margin: 20px;
+  width: 100%;
+}
+
+.editPostHeading {
+  width: 100%;
+  margin: 0px 0px 10px 0px !important;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.editInputField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.editInputBox {
+  padding: 20px;
+  width: 100%;
+}
+
+.editInput, .editInput2 {
+  outline: none;
+  border: none;
+  margin: 0px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  color: black;
+  width: 70%;
+}
+
+.editInput:focus, .editInput2:focus {
+  outline: none;
+  border: none;
+}
+
+.editInput2 {
+  width: 72.86%;
+}
+
+.editLabel {
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+input:-moz-read-only {
+  background-color: white;
+}
+
+input:read-only {
+  background-color: white;
+}
+
+input::-webkit-input-placeholder {
+  color: #b3b3b3;
+}
+
+input:-ms-input-placeholder {
+  color: #b3b3b3;
+}
+
+input::-ms-input-placeholder {
+  color: #b3b3b3;
+}
+
+input::placeholder {
+  color: #b3b3b3;
+}
+
+.editProfileSectionButtons {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.editSubmitButton {
+  margin: 0px 0px 0px 10px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.editChangeButton, .editPassButton, .editSaveButton, .editRemoveButton, .editDeleteButton {
+  outline: none;
+  border: none;
+  margin: 0px 6px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+.editChangeButton:focus, .editPassButton:focus, .editSaveButton:focus, .editRemoveButton:focus, .editDeleteButton:focus {
+  outline: none;
+  border: none;
+}
+
+.editChangeButton, .editPassButton, .editSaveButton {
+  background-color: #e3e3e3;
+}
+
+.editChangeButton:hover, .editPassButton:hover, .editSaveButton:hover {
+  background-color: #d7d7d7;
+}
+
+.editRemoveButton, .editDeleteButton {
+  color: white;
+  background-color: red;
+}
+
+.editRemoveButton:hover, .editDeleteButton:hover {
+  background-color: #e60000;
+}
+
+.editSaveButton {
+  color: white;
+  background-color: #0d6ae4;
+}
+
+.editSaveButton:hover {
+  background-color: #0b5fcc;
+}

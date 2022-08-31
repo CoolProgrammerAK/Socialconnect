@@ -1,0 +1,31 @@
+@import "../../constants";
+
+.rightbarFriend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.rightbarProfileImgContainer {
+    position: relative;
+    margin-right: 10px;
+}
+
+.rightbarProfileImg {
+    @include img(42px,42px);
+}
+
+.rightbarUsername {
+    font-weight: 500;
+
+}
+
+.rightbarOnline {
+  @include img(12px,12px){
+    background-color: $lightgreen;
+    position: absolute;
+    top: -2px;
+    right: 0px;
+    border: 2px solid $white}
+}

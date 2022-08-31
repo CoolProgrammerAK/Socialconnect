@@ -1,0 +1,59 @@
+@import "../../constants";
+
+.Input {
+    font-size: 16px;
+    width: 100%;
+    background-color: $inputcolor;
+    @include outlineborder();
+
+}
+
+.Color {
+
+    background-color: $lightgray;
+}
+
+.InputBox {
+    position: relative;
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: $inputcolor;
+    @include setspace(0px 10px 0px 0px, 11px, 16px, 500);
+
+    @include flexwithcenter(row, space-between) {
+        align-items: center;
+    }
+
+    @include outlineborder();
+}
+
+.Entry {
+    width: 96%;
+    background-color: $lightgray;
+}
+
+.Smile {
+    opacity: .7;
+    cursor: pointer;
+
+}
+
+.picker {
+    position: absolute;
+    bottom: -10;
+}
+
+.Share {
+    top: 0 !important;
+
+}
+
+.emoji-mart-preview {
+    display: none;
+}
+
+.emoji-mart {
+    padding: 10px !important;
+
+}

@@ -1,0 +1,137 @@
+@import "../../constants";
+
+.editIcon {
+    opacity: .7;
+
+    &:hover {
+
+        opacity: .9;
+    }
+
+}
+
+.editPostflex {
+    display: flex;
+    align-items: center;
+}
+
+.editPostAppbar {
+    height: 60px;
+
+    justify-content: space-between;
+    box-shadow: $boxshadow2;
+    z-index: 99;
+    position: sticky;
+    top: 0;
+    padding: 0px 15px;
+    background-color: $navbar;
+}
+
+.editPostAppbarLeftHeading {
+    margin-left: 10px;
+}
+
+.editPostAppbarLeft {
+    color: $white;
+
+}
+
+.editPostAppbarRightButton {
+    background: transparent;
+
+    border-radius: 4px;
+    border: 2px solid $white;
+    transition: .2s ease-in-out;
+
+    color: $white;
+    @include setspace(10px 0px, 5px 15px, 20px, 600);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 80px;
+}
+
+.backgroundButton {
+    color: $navbar;
+    background-color: $white;
+    margin-right: 10px;
+
+}
+
+.editPostBody {
+
+    height: 100%;
+}
+
+.editPostSection {
+
+    flex-direction: column;
+    max-width: 600px;
+    margin: 15px auto;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.editPostSectionInner {
+    margin: 10px;
+    background-color: $white;
+    width: 100%;
+    padding: 30px;
+    box-shadow: $box-shadow
+}
+
+.editPostMiddleSection {
+    @include flexwithcenter(column, space-around)
+}
+
+.editPostMiddleSectionBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.editPostMiddleDescription {
+    font-weight: bold;
+    font-size: 16;
+}
+
+.editPostMargin {
+
+    margin-bottom: 10px;
+}
+
+.editPostAlign {
+
+    justify-content: space-between;
+
+}
+
+.editPostm {
+
+    margin-top: 40px;
+
+}
+
+.editLeftm {
+    margin-right: 10px;
+}
+
+.editPostImageWrapper {
+    flex: 1;
+    background-color:$lightgray;
+    padding: 8px;
+    justify-content: center;
+    transition: .5s ease-in-out;
+    border-radius: 10px;
+
+    &:hover {
+
+        background-color: darken($lightgray,30);
+    }
+}
+
+
+.editPostImageSection {
+    justify-content: space-between;
+    width: 100%;
+}

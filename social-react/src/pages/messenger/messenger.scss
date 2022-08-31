@@ -1,0 +1,103 @@
+@import '../../constants';
+
+.messenger {
+    height: calc(100vh - 100px);
+    display: flex;
+    // @media screen and (max-width:700px) {
+    //    flex-direction: column-reverse;
+ 
+    // }
+}
+
+.chatMenu {
+    flex: 3;
+    // @media screen and (max-width:700px) {
+    //     display: none;
+        
+    // }
+}
+
+.chatBox {
+    flex: 6;
+}
+
+.chatOnline {
+    flex: 3;
+    @media screen and (max-width:1000px) {
+        display: none;
+        
+    }
+}
+
+.chatMenuWrapper,
+.chatOnlineWrapper {
+    padding: 20px;
+    height: 100%;
+}
+
+.chatMenuInput {
+    padding: 10px 0px;
+    border-bottom: 1px solid $grey!important;
+    width: 100%;
+    font-size: 16px;
+    @include outlineborder();
+
+}
+
+%flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chatBoxBottom {
+    width: 100%;
+    @extend %flex;
+    margin-top: 5px;
+
+}
+
+.chatBoxWrapper {
+    padding: 20px;
+    @extend %flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+.noConversationText{
+    // position: absolute;
+    // top: 10%;
+    font-size: 32px;
+    color: $grey;
+    padding: 10px 25px;
+}
+.startConversation{
+    @include setspace(  20px 10px,0px,1.3rem,400);
+    text-align: center;
+    color: $grey;
+}
+.chatBoxTop {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    padding-right: 15px;
+    // @media screen and (max-width:700px) {
+    //   overflow-y: auto;
+    //  }
+}
+
+.chatMessageInput {
+    width: 80%;
+    height: 90px;
+    padding: 10px;
+}
+
+.chatSubmit {
+    width: 100px;
+    height: 40px;
+    color: $white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: $teal;
+}

@@ -1,0 +1,201 @@
+.topBarContainer {
+  height: 60px;
+  width: 100%;
+  background-color: #1877f2;
+  top: 0;
+  -webkit-box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.68);
+          box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.68);
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 12;
+}
+
+.topBarLinks, .imgContainer, .margin2 {
+  margin: 0px 10px 0px 0px;
+}
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .topBarLinks, .imgContainer, .margin2 {
+    margin: 0px 30px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .topBarLinks, .imgContainer, .margin2 {
+    margin: 0px 15px 0px 0px;
+  }
+}
+
+.logo {
+  color: white;
+  margin: 0px;
+  padding: 0px 21px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 705px) {
+  .logo {
+    display: none;
+  }
+}
+
+.searchbar {
+  background-color: white;
+  border-radius: 30px;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  height: 40px;
+  width: 87%;
+  margin: 0px auto;
+}
+
+.searchIcon {
+  font-size: 20px !important;
+  margin-left: 10px;
+}
+
+.searchInput {
+  width: calc(78% - 15px);
+  outline: none;
+  border: none;
+}
+
+.searchInput:focus {
+  outline: none;
+  border: none;
+}
+
+.topBarCenter {
+  padding: 0px 4px 0px 4px;
+  width: 100%;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+@media screen and (max-width: 1400px) {
+  .topBarCenter {
+    -webkit-box-flex: 6;
+        -ms-flex: 6;
+            flex: 6;
+  }
+}
+
+.topBarRight {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.topBarBox {
+  width: 100%;
+}
+
+.topBarIcons, .topBarContainer, .searchbar, .topBarLeft, .topBarRight, .topBarBox, .topBarIconBadge, .topBarLinks, .imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topBarIcon {
+  cursor: pointer;
+  position: relative;
+  font-size: 18px;
+  margin-right: 26px;
+}
+
+@media screen and (max-width: 1400px) {
+  .topBarIcon {
+    font-size: 17px;
+    margin-right: 18px;
+  }
+}
+
+.MuiMenuItem-root {
+  text-align: center;
+}
+
+.big {
+  font-size: 30px !important;
+}
+
+.linkNavigation {
+  text-decoration: none;
+  color: black !important;
+}
+
+.topBarIconBadge {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: red;
+  color: white;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 11px;
+}
+
+.topBarLink {
+  color: white;
+  cursor: pointer;
+  font-size: 18.4px;
+  margin-right: 20px;
+}
+
+.topBarImg {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profileName {
+  color: white;
+  cursor: pointer;
+}
+
+.topBarRightMob {
+  display: none;
+}
+
+.icon {
+  color: white;
+}
+
+.menuIcon {
+  display: none !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .menuIcon {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .MuiIconButton-root {
+    padding: 0px 5px 0px 10px !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .imgContainer {
+    display: none;
+  }
+}

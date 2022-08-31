@@ -1,0 +1,87 @@
+@import '../../constants';
+
+.share{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow:$boxshadow2;
+
+}
+.shareWrapper {
+    padding: 10px;
+  }
+
+  .shareProfileImg {
+    @include img(50px,50px){
+    margin-right: 10px;}
+  }
+  .shareTop{
+      display: flex;
+      align-items: center;
+  }
+  .shareInputBox{
+    width:90%;
+  }
+  .shareInput {
+    width: 90%;
+    font-size:16px;
+
+    @include outlineborder();
+  }
+
+
+  .shareHr {
+    margin: 20px;
+  }
+  .shareOptions{
+      display: flex;
+      align-items: center;
+  }
+  .shareBottom {
+   @include flexwithcenter(row,space-between){
+       align-items: center;
+   }
+  }
+  .shareOption{
+    @extend .shareTop;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.shareButton{
+    border: none;
+    border-radius: 5px;
+    background-color: $lightgreen;
+  
+    @include setspace(0px 20px 0px 0px,8px 18px,17px,500);
+    cursor: pointer;
+    width:80px;
+    @include flexwithcenter(row,center);
+    color: $white;
+}
+.shareIcon{
+    font-size: 18px;
+    margin-right: 3px;
+}
+
+.shareOptionText{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.shareImgContainer{
+  padding: 0px 20px 10px 20px;
+  position: relative;
+
+}
+.shareImg{
+  width: 100%;
+  object-fit: contain;
+  max-height: 350px;
+}
+
+.shareCancelImg{
+  position: absolute;
+  top: 0;
+  right: 0px;
+  cursor: pointer;
+  color: darken($color: $lightgray, $amount: 40);
+}

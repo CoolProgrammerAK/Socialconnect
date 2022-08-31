@@ -1,0 +1,35 @@
+@import '../../constants';
+
+.conversation{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 20px 0px;
+     &:hover{
+        background-color: $lightgray
+       
+     }
+}
+.conversationImg{
+@include img(50px,50px);
+padding: 10px;
+margin-right: 20px;
+}
+.conversationText{
+    font-weight: 500;
+    flex-grow: 1;
+}
+.conversationDetail{
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+.conversationBadge{
+    @include img(22px, 22px);
+    background-color: $red;
+    color: $white;
+    @include flexwithcenter(row, center) {
+        align-items: center
+    }
+    font-size: 13px;
+}

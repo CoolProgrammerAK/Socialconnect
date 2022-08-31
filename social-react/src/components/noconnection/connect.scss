@@ -1,0 +1,15 @@
+@import "../../constants";
+
+.noPost{
+    background-color: $lightgray;
+  
+    font-family: monospace;
+    height: 150px;
+
+    border-radius: 10px;
+    @include setspace( 12px 10px 20px 10px,10px 20px,1.3rem,400);
+    @include flexwithcenter(row,center){
+        align-items:center
+    }
+   
+}

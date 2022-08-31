@@ -1,0 +1,10 @@
+.feed {
+  -webkit-box-flex: 5.5;
+      -ms-flex: 5.5;
+          flex: 5.5;
+}
+
+.feedWrapper {
+  padding: 20px 10px 20px 20px;
+  position: relative;
+}

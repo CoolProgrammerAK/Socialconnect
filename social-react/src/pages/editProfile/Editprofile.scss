@@ -1,0 +1,168 @@
+@import "../../constants";
+
+
+%editProfileSectionInner {
+    display: flex;
+    align-items: center;
+}
+
+.loadingSpinner {
+    @extend %editProfileSectionInner;
+}
+.editProfileSectionWrapper{
+    max-width: 700px;
+    margin: auto;
+}
+.editProfileSectionInner {
+
+    box-shadow: $box-shadow;
+    @extend %editProfileSectionInner;
+    flex-direction: column;
+    padding: 10px 20px;
+    margin:20px;
+}
+
+.editProfilePicture {
+    @include img(180px, 180px) {
+        cursor: pointer;
+        box-shadow: $boxshadow2;
+    }
+}
+
+.editProfileSectionImg {
+    @extend %editProfileSectionInner;
+    flex-direction: column;
+
+}
+
+.editProfileImgButtons {
+
+    @extend %editProfileSectionInner;
+    margin: 20px 0px;
+}
+
+%button {
+    @include setspace(0px 16px 0px 0px !important, 10px, 15px, 500)
+}
+
+.editImgButton {
+
+    @extend %button;
+}
+
+.deleteImgButton {
+
+    @extend %button;
+}
+
+.editProfileSectionContainer {
+    margin: 20px;
+    width: 100%;
+}
+
+.editPostHeading {
+    width: 100%;
+
+    @include setspace(0px 0px 10px 0px !important, 0px, 18px, 600)
+}
+
+.editInputField {
+    @include flexwithcenter(row, space-between) {
+        align-items: center;
+    }
+
+    ;
+    margin-bottom: 15px;
+}
+
+.editInputBox {
+    padding: 20px;
+    width: 100%;
+}
+
+.editInput {
+    @include outlineborder();
+    @include setspace(0px, 10px, 16px, 500);
+    background-color: $lightgray;
+    border-radius: 5px;
+    color: $black;
+    width: 70%;
+}
+
+.editInput2 {
+    @extend .editInput;
+    width: 72.86%;
+}
+
+.editLabel {
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+input:read-only {
+    background-color: $white;
+}
+
+input::placeholder {
+    color: lighten($color: $black, $amount: 70);
+}
+
+.editProfileSectionButtons {
+
+    @extend %editProfileSectionInner;
+    justify-content: flex-end;
+}
+
+.editSubmitButton {
+    margin: 0px 0px 0px 10px !important;
+    @include flexwithcenter(row, center);
+}
+
+%editImgButton {
+    @include outlineborder();
+    @include setspace(0px 6px, 10px 15px, 16px, 500);
+    border-radius: 6px;
+
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.editChangeButton {
+    @extend %editImgButton;
+    background-color: darken($color: $lightgray, $amount: 5);
+
+    &:hover {
+        background-color: darken($color: $lightgray, $amount: 10);
+    }
+}
+
+.editRemoveButton {
+    @extend %editImgButton;
+    color: $white;
+    background-color: $red;
+
+    &:hover {
+        background-color: darken($color: $red, $amount: 5);
+    }
+}
+
+.editPassButton {
+
+    @extend .editChangeButton;
+}
+
+.editDeleteButton {
+
+    @extend .editRemoveButton;
+}
+
+.editSaveButton {
+
+    @extend .editChangeButton;
+    color: $white;
+    background-color: darken($color: $navbar, $amount: 5);
+
+    &:hover {
+        background-color: darken($color: $navbar, $amount: 10);
+    }
+}

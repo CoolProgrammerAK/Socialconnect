@@ -1,0 +1,69 @@
+@import "../../constants";
+
+
+.resetBox{
+    flex: 1;
+    @include flexwithcenter(column, center);
+    width: 500px;
+    margin:50px auto;
+
+    @media screen and (max-width:600px) {
+        text-align: center;
+        width: 100%;
+    }
+    .resetHeading{
+        @include setspace(8px 0px,0px, 1.5em, 700){
+            text-align: center
+        };
+        
+    }
+    .resetForm{
+        margin: 15px 0px;
+        @media screen and (max-width:600px) {
+            margin:0px 20px;
+        }
+        .resetInput{
+                border-radius: 5px;
+                border: 1px solid $grey;
+            
+                @include flexwithcenter(row, space-between) {
+                    align-items: center
+                }
+            
+                ;
+                @include setspace(8px 0px, 10px 11px, 17px, 500);
+            
+                .loginInputField {
+                
+                    font-size: 17px;
+                    width: 100%;
+                    @include outlineborder();
+                }
+            }
+            .resetButton{
+                width: 100%;
+                align-self: center;
+                height: 50px;
+                border-radius: 10px;
+                border: none;
+                background-color: $lightgreen;
+                color: $white;
+                display: flex;
+                align-items: center;
+                 justify-content: center;
+                @include setspace( 15px 0px, 0px, 20px, 500) {
+                    cursor: pointer;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                }
+            }
+            
+            
+        
+
+    }
+}
+

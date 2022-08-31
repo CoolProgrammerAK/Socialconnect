@@ -1,0 +1,56 @@
+@import '../../constants';
+
+.sideNav{
+    height: 100%;
+    top:0;
+    z-index: 56;
+    width: 300px;
+    position: fixed;
+    background-color: $lightgray; /* Black*/
+    overflow-x: hidden; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: $boxshadow2;
+
+}
+.closebtn{
+    font-size: 36px!important;
+    color:$inputcolor;
+    &:hover{
+        color: $white;
+    }
+
+}
+%flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sideNavMiddle{
+   @extend %flex;
+    padding: 20px 0px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: saturate($color: $navbar, $amount: 50);
+}
+.drawerImg{
+    @include img(140px,140px);
+    cursor: pointer;
+    padding: 10px 0px;
+}
+.drawerHeading{
+    color: $white;
+}
+.drawerContainer{
+    @extend %flex;
+    margin: 15px 0px;
+}
+.drawerNavigation{
+    color: $black;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+
+    &:hover{
+       background-color: $white;
+    }
+}

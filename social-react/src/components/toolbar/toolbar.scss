@@ -1,0 +1,215 @@
+@import '../../constants';
+
+.topBarContainer {
+
+    @extend .topBarIcons;
+    height: 60px;
+    width: 100%;
+    background-color: $navbar;
+    top: 0;
+
+    box-shadow: $boxshadow2;
+    position: sticky;
+    z-index: 12;
+
+}
+%margin{
+    margin:0px 10px 0px 0px;
+    @media (min-width:1000px) and (max-width:1400px){
+        margin:0px 30px 0px 0px;
+        
+    }
+    @media screen and (max-width:1000px){
+        margin:0px 15px 0px 0px;
+        
+    }
+}
+.logo {
+    color: $white;
+    @include setspace(0px, 0px 21px, 24px, bold);
+    cursor: pointer;
+    @media screen and (max-width:705px){
+        display: none;
+        
+    }
+}
+
+.searchbar {
+    background-color: $white;
+    border-radius: 30px;
+    flex: 4;
+    @extend .topBarIcons;
+    height: 40px;
+    width: 87%;
+    margin: 0px auto;
+}
+
+.searchIcon {
+    font-size: 20px !important;
+    margin: 0px 10px;
+}
+
+.searchInput {
+    width: 100%;
+    margin: 0px 15px;
+    @include outlineborder();
+}
+
+.topBarLeft {
+    @extend .topBarIcons;
+
+}
+#root > div.topBarContainer > div.topBarBox > div.topBarCenter > div > div > div {
+    .MuiInput-underline::before{
+        border-bottom: none!important;
+    }
+}
+
+.topBarCenter {
+    padding: 0px 4px 0px 4px;
+    width:100%;
+    flex: 4;
+    @media screen and (max-width:1400px){
+        flex:6
+        
+    }
+}
+
+.topBarRight {
+    @extend .topBarIcons;
+    justify-content: space-around;
+    flex:4;
+    
+}
+.topBarBox{
+    @extend .topBarIcons;
+    width:100%;
+   
+}
+
+.topBarIcons {
+    display: flex;
+    align-items: center;
+
+}
+
+.topBarIcon {
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+    margin-right: 26px;
+    @media screen and (max-width:1400px){
+        font-size: 17px;
+        margin-right: 18px;
+
+    }
+
+}
+
+.MuiMenuItem-root {
+    text-align: center;
+}
+.big{
+    font-size: 30px!important;
+}
+
+.linkNavigation {
+    text-decoration: none;
+    color: $black !important;
+    padding: 0px 10px;
+   
+}
+.textCe{
+    text-align: center;
+    width: 100%;
+}
+
+.flexAlign{
+    flex-direction: row;
+    display: flex;
+    align-items:center;
+    width: 100%;
+}
+#simple-menu > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation0.MuiPaper-rounded{
+     max-height: 350px;
+     box-shadow: $boxshadow3;
+    .MuiList-padding {
+        padding: 0px!important;
+        .MuiMenuItem-root{
+        padding: 12px !important;
+        }}
+}
+
+.toread{
+    background-color:$toread!important;
+
+}
+
+.topBarIconBadge {
+    @include img(15px, 15px);
+    background-color: $red;
+    color: $white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    @extend .topBarIcons;
+    justify-content: center;
+    font-size: 11px;
+}
+
+.topBarLinks {
+    @extend .topBarIcons;
+    @extend %margin;
+}
+
+.topBarLink {
+    color: $white;
+    cursor: pointer;
+    font-size: 18.4px;
+    margin-right: 20px;
+}
+
+.topBarImg {
+   margin-right: 10px;
+    @include img(40px, 40px) {
+      
+    }
+
+}
+.profileName{
+    color:$white;
+    cursor: pointer;
+}
+.topBarRightMob {
+    display: none;
+}
+
+.icon {
+    color: $white;
+}
+
+.menuIcon{
+    display: none!important;
+
+    @media screen and (max-width:1000px) {
+        display: block!important;
+    }
+   
+}
+.MuiIconButton-root{
+    @media screen and (max-width:705px) {
+        padding:0px 5px 0px 10px!important;
+    }
+}
+.imgContainer{
+    @extend .topBarIcons;
+    @extend %margin;
+
+    @media screen and (max-width:1000px) {
+        display: none;
+    }
+}
+.margin2{
+    @extend %margin;
+}

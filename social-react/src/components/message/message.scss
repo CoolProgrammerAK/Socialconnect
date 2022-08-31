@@ -1,0 +1,39 @@
+@import '../../constants';
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.messageTop {
+    display: flex;
+}
+
+.messageImg {
+    @include img(32px,32px);
+    margin-right: 10px;
+}
+
+.messageText {
+    word-wrap: break-word;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: $navbar;
+    color: $white;
+    max-width: 300px;
+}
+
+.messageBottom {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.message.own {
+    align-items: flex-end;
+}
+
+.message.own .messageText {
+    background-color: $message;
+    color: $black;
+}

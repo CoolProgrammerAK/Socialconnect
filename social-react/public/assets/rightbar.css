@@ -1,0 +1,161 @@
+.rightbarP {
+  -webkit-box-flex: 3.5;
+      -ms-flex: 3.5;
+          flex: 3.5;
+}
+
+.rightbarH {
+  -webkit-box-flex: 3.5;
+      -ms-flex: 3.5;
+          flex: 3.5;
+}
+
+@media only screen and (max-width: 720px) {
+  .rightbarH {
+    display: none;
+  }
+}
+
+.rightbarWrapper {
+  padding: 20px 20px 20px 10px;
+}
+
+@media only screen and (max-width: 720px) {
+  .rightbarWrapper {
+    text-align: center;
+  }
+}
+
+.birthdayContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.birthdayImg {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.birthdayText {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.rightbarAd {
+  margin: 30px 0px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.rightbarTitle {
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 720px) {
+  .rightbarTitle {
+    display: none;
+  }
+}
+
+.rightbarInfo {
+  margin-bottom: 30px;
+}
+
+.rightbarInfoItem {
+  margin-bottom: 10px;
+}
+
+.rightbarInfoItemKey {
+  font-weight: 500;
+  margin-right: 15px;
+  color: grey;
+}
+
+.rightbarInfoItemValue {
+  font-weight: 300;
+}
+
+.rightbarFollowings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 720px) {
+  .rightbarFollowings {
+    display: none;
+  }
+}
+
+.rightbarFollowing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.rightbarFollowingImg {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.rightbarFollowingName {
+  margin: 4px 0px;
+  padding: 0px;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.rightbarFollowButton {
+  background-color: #1877f2;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  width: 100px;
+  color: white;
+  margin: 10px 0px;
+  padding: 6px 18px;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+}
+
+.rightbarFollowButton:focus {
+  outline: none;
+  border: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .rightbarFollowButton {
+    margin: 10px auto;
+    padding: 6px 18px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

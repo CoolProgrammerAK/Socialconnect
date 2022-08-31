@@ -1,0 +1,77 @@
+.sideNav {
+  height: 100%;
+  top: 0;
+  z-index: 56;
+  width: 300px;
+  position: fixed;
+  background-color: #f0f0f0;
+  /* Black*/
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.68);
+          box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.68);
+}
+
+.closebtn {
+  font-size: 36px !important;
+  color: #eee6e6;
+}
+
+.closebtn:hover {
+  color: white;
+}
+
+.sideNavMiddle, .drawerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sideNavMiddle {
+  padding: 20px 0px;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #0b75ff;
+}
+
+.drawerImg {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  padding: 10px 0px;
+}
+
+.drawerHeading {
+  color: white;
+}
+
+.drawerContainer {
+  margin: 15px 0px;
+}
+
+.drawerNavigation {
+  color: black;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.drawerNavigation:hover {
+  background-color: white;
+}

@@ -1,0 +1,75 @@
+.Input {
+  font-size: 16px;
+  width: 100%;
+  background-color: #eee6e6;
+  outline: none;
+  border: none;
+}
+
+.Input:focus {
+  outline: none;
+  border: none;
+}
+
+.Color {
+  background-color: #f0f0f0;
+}
+
+.InputBox {
+  position: relative;
+  width: 80%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #eee6e6;
+  margin: 0px 10px 0px 0px;
+  padding: 11px;
+  font-size: 16px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  border: none;
+}
+
+.InputBox:focus {
+  outline: none;
+  border: none;
+}
+
+.Entry {
+  width: 96%;
+  background-color: #f0f0f0;
+}
+
+.Smile {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.picker {
+  position: absolute;
+  bottom: -10;
+}
+
+.Share {
+  top: 0 !important;
+}
+
+.emoji-mart-preview {
+  display: none;
+}
+
+.emoji-mart {
+  padding: 10px !important;
+}

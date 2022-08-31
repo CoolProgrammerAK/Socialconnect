@@ -1,0 +1,59 @@
+$navbar:#1877f2;
+$lightgreen:#42b72a;
+$box-shadow: 0px 2px 5px 0px rgba($color: #000000, $alpha: .2), 0 2px 10px 0  rgba($color: #000000, $alpha: .12);
+$boxshadow2:0px 0px 22px -8px rgba($color: #000000, $alpha: .68);
+$boxshadow3:0px 3px 5px -1px rgba($color: #000000, $alpha: .2), 0px 5px 8px 0px rgba($color: #000000, $alpha: .14)
+, 0px 1px 14px 0px rgba($color: #000000, $alpha: .12);
+$inputcolor:rgb(238, 230, 230);
+$lightgray:rgb(240, 240, 240);
+$white:white;
+$black:black;
+$red:red;
+$message:rgb(245, 241, 241);
+$grey:grey;
+$teal:teal;
+$dark:#052958;
+$toread:#d9d9ff;
+@mixin flexwithcenter($value,$justify) {
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $value;
+    @content;
+}
+
+@mixin linkcolor($value) {
+    a {
+        color: $value;
+        text-decoration: none;
+    }
+}
+
+@mixin setspace($mar, $pad, $size, $wt) {
+    margin: $mar;
+    padding: $pad;
+    font-size: $size;
+    font-weight: $wt;
+    @content;
+}
+
+@mixin cursor($value) {
+    #{$value} {
+        cursor: pointer;
+    }
+
+}
+
+@mixin outlineborder() {
+    outline: none;
+    border: none;
+    &:focus {outline: none;
+    border: none;}
+}
+
+@mixin img($width,$height){
+    width: $width;
+    height: $height;
+    border-radius: 50%;
+    object-fit: cover;
+    @content;
+}

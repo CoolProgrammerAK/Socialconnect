@@ -1,0 +1,19 @@
+@import "../../constants";
+
+.sidebarFriend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: $black;
+}
+
+.sidebarFriendImg {
+    @include img(46px, 46px) {
+
+        margin-right: 30px;
+    }
+
+    ;
+
+}

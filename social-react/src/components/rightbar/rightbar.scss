@@ -1,0 +1,115 @@
+@import "../../constants";
+
+
+.rightbarP {
+    flex: 3.5;
+   
+}
+
+.rightbarH {
+    flex: 3.5;
+    @media only screen and (max-width:720px) {
+        display: none;
+    }
+}
+
+.rightbarWrapper {
+    padding: 20px 20px 20px 10px;
+    @media only screen and (max-width:720px) {
+       text-align: center;
+    }
+}
+
+.birthdayContainer {
+    display: flex;
+    align-items: center;
+}
+
+.birthdayImg {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.birthdayText {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.rightbarAd {
+    margin: 0px 0px 30px 0px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.rightbarTitle {
+    @include setspace(0px 0px 10px 0px,0px, 18px, 500);
+    @media only screen and (max-width:720px) {
+        display: none;
+    }
+
+}
+
+.rightbarInfo {
+    margin-bottom: 30px;
+}
+
+.rightbarInfoItem {
+    margin-bottom: 10px;
+}
+
+.rightbarInfoItemKey {
+    font-weight: 500;
+    margin-right: 15px;
+    color: $grey;
+}
+
+.rightbarInfoItemValue {
+    font-weight: 300;
+}
+
+.rightbarFollowings {
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (max-width:720px) {
+        display: none;
+    }
+}
+
+.rightbarFollowing {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.rightbarFollowingImg {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.rightbarFollowingName {
+    @include setspace(4px 0px,0px, 17px, 400);
+    text-align: center;
+    
+
+}
+
+.rightbarFollowButton {
+    background-color: $navbar;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 100px;
+    color: $white;
+    @include setspace(10px 0px, 6px 18px, 16px, 500);
+    @include outlineborder();
+    @media only screen and (max-width:720px) {
+        @include setspace(10px auto, 6px 18px, 16px, 500);
+    }
+}
+
