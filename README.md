@@ -9,6 +9,7 @@ Socialconnect-  Connect with friends and the world around you
   * Mongodb
   * Cloudinary
   * Material-ui
+  * Socket.io
   
 * Features:
   * Sign In
